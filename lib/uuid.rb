@@ -183,9 +183,7 @@ class UUID
   #
   # Set to false if your system cannot use a state file (e.g. many shared
   # hosts).
-  def self.state_file=(path)
-    @state_file = path
-  end
+  UUID.state_file = false
 
   ##
   # Returns true if +uuid+ is in compact, default or urn formats.  Does not
